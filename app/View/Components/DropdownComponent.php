@@ -15,6 +15,8 @@ class DropdownComponent extends Component
 
     /**
      * Array of all options.
+     *
+     * @var array $options
      */
     public array $options;
 
