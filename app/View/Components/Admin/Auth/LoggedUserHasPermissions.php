@@ -6,14 +6,17 @@ use Illuminate\View\Component;
 
 class LoggedUserHasPermissions extends Component
 {
-    /**
-     * Create a new component instance.
-     *
-     * @return void
-     */
-    public function __construct()
+    public $loggedUser;
+
+    public bool $showOnlyIcons = false;
+    public bool $hasAdminRole  = false;
+
+    public function __construct($loggedUser, bool $showOnlyIcons = false)
     {
-        //
+        $this->loggedUser    = $loggedUser;
+        $this->showOnlyIcons = $showOnlyIcons;
+
+        $this->hasAdminRole  = false;
     }
 
     /**

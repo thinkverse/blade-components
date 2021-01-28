@@ -1,3 +1,8 @@
-<div class="block h-5 w-5 bg-red-500">
-
-</div>
+<ul class="space-y-6">
+    <li>
+        $showOnlyIcons::{{ $showOnlyIcons ? 'true' : 'false' }};;
+    </li>
+    <li>
+        $hasAdminRole::{{ $hasAdminRole ? 'true' : 'false' }};;
+    </li>
+</ul>
