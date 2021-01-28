@@ -4,7 +4,7 @@ namespace App\View\Components\Admin\Auth;
 
 use Illuminate\View\Component;
 
-class LoggedUserHasPermissions extends Component
+class loggedUserHasPermissions extends Component
 {
     public $loggedUser;
 
